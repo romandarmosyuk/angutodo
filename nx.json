@@ -51,5 +51,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "meteo"
+  "defaultProject": "angutodo"
 }

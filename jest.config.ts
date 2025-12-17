@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'meteo',
+  displayName: 'angutodo',
   preset: './jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: './coverage/meteo',
+  coverageDirectory: './coverage/angutodo',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
