@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Todo } from '@angutodo/api';
 
 @Component({
   selector: 'app-todo-item',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './todo-item.component.html',
   styleUrl: './todo-item.component.less',
 })
-export class TodoItemComponent {}
+export class TodoItemComponent {
+  @Input() todo?: Todo;
+}

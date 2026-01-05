@@ -52,6 +52,10 @@
     },
     "@nx/angular:component": {
       "style": "less"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
     }
   },
   "defaultProject": "angutodo"

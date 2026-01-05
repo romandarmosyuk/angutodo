@@ -1,3 +1,10 @@
+@if(todo$ | async; as todos) {
+<div class="listToDo">
+  @for (todo of todos; track todo.createdAt ) {
+  <app-todo-item [todo]="todo"></app-todo-item>
+  }
+</div>
+} @else {
 <div class="empty">
   <img class="image" src="/images/clipboard.png" alt="empty" />
   <div class="title">
@@ -5,7 +12,4 @@
     <p>Добавьте новую задачу!</p>
   </div>
 </div>
-
-<div class="listToDo">
-  <app-todo-item></app-todo-item>
-</div>
+}
